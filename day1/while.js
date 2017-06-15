@@ -106,7 +106,7 @@ let counter = 0;
 while (counter <= 100) {
   console.log(counter);
   counter = counter + 2;
-  counter += 2;
+  counter +=bbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrb 2;
 }
 
 

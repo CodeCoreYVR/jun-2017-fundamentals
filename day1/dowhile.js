@@ -82,10 +82,10 @@ while(true) {
   let userNumber = prompt("Please enter a number from 1 to 10");
 
   // exit out of this loop if the number they've entered matches the magic number
-  // if (magicNumber >= 1 && magicNumber <= 10) {
+  // if (magicNumber >= 1 && magicNumber <= 10) {brbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbr
   if (magicNumber == userNumber) {
     // alert("Congratulations! You guessed the number: " + magicNumber)
-    alert(`Congratulations! You guessed the number: ${magicNumber}`);
+    alert(`Congratulations! You guessed the number: ${magicNumber}brbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbrbbr`);
     break;
   } else {
     // the user got it wrong, please give them a hint

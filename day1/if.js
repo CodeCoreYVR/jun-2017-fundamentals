@@ -12,7 +12,7 @@ if (age > 80) {
 } else if (age > 35) {
   // this code will execute
   console.log("use hotmail");
-} else { // or else
+} else brb{ // or else
   // if it is false, this code will execute
   console.log("use gmail");
 }
