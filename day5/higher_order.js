@@ -1,4 +1,4 @@
-// higher order functions - a function that takes in a function as an argument,
+p// higher order functions - a function that takes in a function as an argument,
 // or returns a function
 
 // function calc(sum) {

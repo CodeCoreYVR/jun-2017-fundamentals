@@ -1,4 +1,4 @@
-// make a cookie object with sugar and flour attributes
+p// make a cookie object with sugar and flour attributes
 // create a bake, eat method for this cookie
 
 // use the keyword this to print out the amount of sugar when we eat or bake

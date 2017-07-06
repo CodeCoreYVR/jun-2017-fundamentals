@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Layout</title>
+    <style>
+      /* visual guide */
+      * {
+        border: thin red solid;
+        color: white;
+      }
+      body {
+        margin: 0px;
+      }
+      nav {
+        height: 50px;
+        width: 100%;
+        background-color: firebrick;
+        position: fixed;
+        top: 0px;
+      }
+      sidebar {
+        padding-top: 50px;
+        width: 25%;
+        height: 500px;
+        background-color: teal;
+        float: left;
+        /* this makes the border width included in the total size of the box */
+        box-sizing: border-box;
+      }
+      content {
+        padding-top: 50px;
+        width: 75%;
+        height: 500px;
+        background-color: beige;
+        float: left;
+        box-sizing: border-box;
+      }
+      footer {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        background-color: firebrick;
+      }
+      article {
+        margin: 10px;
+        height: 75px;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <sidebar>Sidebar
+      <article>Blue Apron</article>
+      <article>Crypto Currencies</article>
+      <article>Machine Learning</article>
+      <article>Dropbox</article>
+    </sidebar>
+    <content>Content</content>
+    <footer>Footer</footer>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-// take each number in the array, multiply it by itself
+p// take each number in the array, multiply it by itself
 // build a new array pushing in the result
 
 

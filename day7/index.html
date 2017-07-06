@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div {
+        /* an element that takes up the entire horizontal plane */
+        display: block;
+        position: static;
+        z-index: 0;
+        float: left; /* inline behavior */
+      }
+
+      img, span, a {
+        /* an inline will share the horizontal plane, and if they exceed the width of the browser, they will wrap to the next line */
+        display: inline;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+
+  </body>
+</html>

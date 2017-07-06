@@ -1,4 +1,4 @@
-// calculator is a good use case of a higher order function
+p// calculator is a good use case of a higher order function
 let add = function(x, y) {
   return x + y;
 };
