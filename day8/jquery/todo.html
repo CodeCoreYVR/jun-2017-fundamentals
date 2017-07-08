@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <!-- import jquery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+
+    <script>
+      // jquery implementation
+      // 1. $(); is jquery initialized, yes
+      // 2. document ready?
+      $(document).ready(function(){
+        // 3. target the form
+        $('form').submit(function(event){
+          event.preventDefault();
+
+          // 4. find out what they are typing and assign it to a variable
+          let todo = $('input[type=text]').val();
+
+          // 5. find the table, put the tr+td+todo
+          $('table').prepend('<tr><td>' + todo + '</td></tr>');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- setup the ui -->
+    <h1>To Do List</h1>
+
+    <table>
+    </table>
+
+    <form action="" method="POST">
+      <input type="text">
+      <input type="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <style>
+      /* this is one way to target the input text field for username */
+      /* #username { */
+      /* select elements with matching attributes */
+      input[type=text] {
+        border-width: 0px;
+        border-bottom: 1px solid grey;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script>
+      // step one - include jquery, either through cdn or download
+      // step two - ????
+      $(document).ready(function() {
+        // this ensures that the has finished loading
+
+        // add event listeners to my 2 input text fields
+        $('input[type=text]').keyup(function(event) {
+          console.log("a key was pressed");
+          // $('span').html(event.key); // gives us the last character the person typed
+          // let name = $(this).val(); // retrieves or gets the value of the text field
+          // $('span').html( name ); //
+        });
+
+        $('input[type=password]').keyup(function(event){
+          console.log(event.key);
+          console.log( $(this).val() );
+        });
+
+        // $('input[type=submit]').click(function(event){
+        //   event.preventDefault();
+        // });
+
+        $('form').submit(function(event){
+          event.preventDefault();
+          console.log("ignoring default behaviour, let's do something else...");
+          // add a list item to my unorderd list
+          let msg = $('input[type=text]').val();
+          $('ul').append('<li>' + msg + '</li>');
+        });
+
+
+
+      }); // initialization check
+    </script>
+  </head>
+  <body>
+    <h1>Hello <span>Jacob</span></h1>
+    <!-- <form action="" method="POST">
+      <label>Username:</label>
+      <input id="username" type="text">
+
+      <label>Password:</label>
+      <input type="password">
+
+      <input type="submit">
+    </form> -->
+
+    <h1>Chat</h1>
+    <form action="" method="">
+      <label>Chat History</label>
+      <ul>
+        <!-- chat history goes here... -->
+      </ul>
+      <input type="text">
+      <input type="submit" value="Chat">
+    </form>
+  </body>
+</html>
+
+
+
+Create a todo list that prepends to <table></table>
+
+<tr><td></td></tr>
+
+- user sees a text field and a submit button
+- every time they click on the submit button,
+add another task to your to do list.
+
+
+
+
+
+
+<!--  -->
