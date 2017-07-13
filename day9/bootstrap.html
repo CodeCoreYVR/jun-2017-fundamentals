@@ -1,0 +1,146 @@
+<!-- bootstrap - frontend framework -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/jquery-3.2.0.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+      // step 1: document ready
+      $(document).ready(function(){
+
+        // listen for hyperlinks that are clicked
+        // $('a').click();
+        $('nav a').click(function(){
+          console.log("a link in my navigation system was clicked");
+
+          // set all my links to not be active
+          $('li').removeClass('active');
+          // add the "active class to the link that was clicked"
+          $(this).parent().addClass("active");
+        });
+        // $('nav ul a').click();
+      });
+
+    </script>
+
+    <style>
+      /* change this from vertical menu to a horizontal one */
+      /*nav li {
+        display: inline-block;
+
+        or
+
+        float: left;
+        list-style: none;
+      }*/
+      body {
+        margin-top: 50px;
+      }
+      /*body {
+        padding-top: 70px;
+      }*/
+      p {
+        font-size: 20px;
+      }
+      /* your own created style */
+      .bg-orange {
+        background-color: orange;
+      }
+      /* overriding bootstrap's existing styles */
+      .jumbotron {
+        background-color: blue;
+      }
+
+      /*h1 {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }*/
+      span {
+        font-size: 100px;
+        color: pink;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <h1>Bootstrap Demo</h1>
+
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Fundamentals Dev Studio</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="home" class="container-fluid text-center">
+      <div class="jumbotron bg-orange">
+        <h1>Fundamentals Design Studio</h1>
+        <p>Making the web beautiful, one site at a time.</p>
+      </div>
+      <p>Based out of Gastown in Vancouver, BC.</p>
+      <p>CodeCore.</p>
+    </div>
+
+    <div id="about" class="container">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id="portfolio" class="container">
+      <h1>Portfolio</h1>
+      <!-- grid system -->
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <span class="glyphicon glyphicon-ice-lolly-tasted"></span>
+          HTML
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">CSS</div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">JavaScript</div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">jQuery</div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">Bootstrap</div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">Firebase</div>
+      </div>
+    </div>
+
+    <div id="contact" class="container">
+      <h1>Contact</h1>
+    </div>
+
+    <p class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </body>
+</html>
+
+
+
+
+
+<!--  -->

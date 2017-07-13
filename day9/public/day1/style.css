@@ -1,0 +1,14 @@
+/*css rules*/
+body {
+  background-color: lavender;
+}
+h1 {
+  color: pink;
+  font-family: Helvetica;
+}
+h2 {
+  color: brown;
+}
+p {
+  color: lightgrey;
+}

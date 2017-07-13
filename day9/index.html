@@ -1,0 +1,75 @@
+<!-- good evening fundamentals! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Review</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script>
+      // to hijack the submit event of this form
+
+      // step 1: document ready
+      // $();
+      // $(document)
+
+      // let init = function(){};
+      // $(document).ready(init);
+
+      $(document).ready(function(){
+        $('form').slideUp();
+        $('form').slideDown(1000);
+        // step 2: listen for the submit being pressed
+        // $('#submit-button');
+        // $('input[type=text]');
+
+        // form
+        // $('form');
+        // callback function is passed in
+        $('#user-login').submit(function(event){
+          // step 3: stop the page from refreshing... default action
+          event.preventDefault();
+
+          // i want to change the username that was entered to "Jesse"
+          // $('#username').val('Jesse');
+          // val() will get the first result
+          // val('Jesse') will set the value of a form
+
+          // $('h1').eq(0); // first occuring h1
+          // $('h1').eq(1); // first occuring h1
+          // $('input[type=text]')
+
+          // append the usernames to the bottom of the page
+          let name = $('#username').val();
+
+          $('#username').val(); // getter
+          $('#username').val("Jesse"); // setter
+
+          // if there are more than 1 h1 tags on the page, it would return a wrapped set
+          // $('h1')[0];
+          // $('h1').eq(0);
+          //
+          // // <h1>My Header</h1>
+          // $('h1').html(); // innerHTML // get, we retrieve the first innerHTML occurance of h1
+          // $('h1').html("New Header"); // when we set, it modifies the entire wrapped set
+
+          // $('table')
+          $('#names').append('<tr><td>' + name + '</td></tr>');
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <form id="user-login" action="" method="POST">
+      <label>User Name:</label>
+      <input id="username" type="text">
+      <label>Password:</label>
+      <input type="password">
+      <input id="submit-button" type="submit">
+    </form>
+
+    <table id="names">
+    </table>
+  </body>
+</html>
